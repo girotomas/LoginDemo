@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "310913375203",
+    "firebase_url": "https://logindemo-cf739.firebaseio.com",
+    "project_id": "logindemo-cf739",
+    "storage_bucket": "logindemo-cf739.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310913375203:android:0b2079d5b0772789",
+        "android_client_info": {
+          "package_name": "com.tomasgiro.datademo.logindemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310913375203-n1u6lso006hgvqdugqrecq1dojo8pkkn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tomasgiro.datademo.logindemo",
+            "certificate_hash": "c48cd81254cd8258f6323cfe28052020334aecbe"
+          }
+        },
+        {
+          "client_id": "310913375203-o5i9kq9jrgaes4cm3cfa6eok978dkkut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tomasgiro.datademo.logindemo",
+            "certificate_hash": "c38195d144912e90fc92a962abc1f42f503b68f3"
+          }
+        },
+        {
+          "client_id": "310913375203-hcavv9nadrth7e7g21olgh0qavcucjon.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD68T8oUQDuZhpwYiPZ5e2Ck8UuMHBG7g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310913375203-hcavv9nadrth7e7g21olgh0qavcucjon.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

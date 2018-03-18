@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tomasgiro.datademo.logindemo"
+    android:versionCode="2"
+    android:versionName="2.0">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.tomasgiro.datademo.logindemo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Game" />
+        <activity android:name=".GoogleConnect" />
+        <activity
+            android:name=".FirebaseLogin"
+            android:parentActivityName=".MaPokedex"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".GridView" />
+        <activity android:name=".Messaging" />
+        <activity
+            android:name=".mRecyclerView"
+            android:parentActivityName=".MaPokedex" />
+        <activity android:name=".TakeAPicture" />
+        <activity android:name=".tryReturnJSON" />
+        <activity android:name=".returnsPhotoResult" />
+        <activity android:name=".MaPokedex" />
+        <activity
+            android:name=".ShowWiki"
+            android:parentActivityName=".MaPokedex" />
+        <activity
+            android:name=".Settings"
+            android:parentActivityName=".MaPokedex" />
+        <activity android:name=".WelcomeScreen" />
+        <activity android:name=".Billing" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="4faa78bd502882a7aa875745ebb3206e160d7309" />
+
+        <activity android:name=".PayWithStripe"></activity>
+    </application>
+
+</manifest>
